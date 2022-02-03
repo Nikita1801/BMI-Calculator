@@ -1,7 +1,7 @@
 
 #  BMI Calculator
 
-# Pattern is MVC
+## Pattern is MVC
 
 ## About this app
 
