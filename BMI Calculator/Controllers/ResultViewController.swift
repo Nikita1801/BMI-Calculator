@@ -1,16 +1,12 @@
-//
-//  ResultViewController.swift
-//  BMI Calculator
-//
-//  Created by Никита Макаревич on 04.02.2022.
-//  Copyright © 2022 Angela Yu. All rights reserved.
-//
+
 
 import UIKit
 
 class ResultViewController: UIViewController {
     
     var bmiValue : String?
+    var advice: String?
+    var color: UIColor?
 
     @IBOutlet weak var bmiLable: UILabel!
     @IBOutlet weak var adviceLable: UILabel!
@@ -18,10 +14,14 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        bmiLable.text = bmiValue
+        adviceLable.text = advice
+        self.view.backgroundColor = color
+        
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*
